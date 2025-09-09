@@ -77,14 +77,6 @@
   <link rel="alternate" hreflang="ja" href="https://mirakurutomato.github.io/Toma_Okugawa/html/award.html">
   <link rel="alternate" hreflang="x-default" href="https://mirakurutomato.github.io/Toma_Okugawa/html/award.html">
   
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-  <link rel="manifest" href="/site.webmanifest">
-  
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,10 +85,6 @@
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
-  
-  <meta name="theme-color" content="#3b82f6">
-  <meta name="msapplication-TileColor" content="#3b82f6">
-  <meta name="msapplication-config" content="/browserconfig.xml">
 
   <style>
     * {
@@ -255,9 +243,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
-    }
-
-    .page-header h1 .title-container {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -274,6 +259,7 @@
     .page-header p {
       font-size: clamp(1rem, 3vw, 1.2rem);
       color: var(--text-secondary);
+      text-align: center;
     }
 
     .ly_cont {
@@ -456,7 +442,7 @@
         gap: 0.5rem;
       }
 
-      .page-header h1 .title-container {
+      .page-header h1 {
         flex-direction: column;
         gap: 0.5rem;
       }
@@ -483,10 +469,8 @@
   <main role="main">
     <div class="page-header">
       <h1>
-        <div class="title-container">
-          <i class="fas fa-trophy trophy-icon"></i>
-          <span>Awards</span>
-        </div>
+        <i class="fas fa-trophy trophy-icon"></i>
+        Awards
       </h1>
       <p>受賞歴</p>
     </div>
