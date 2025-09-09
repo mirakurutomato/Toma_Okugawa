@@ -6,8 +6,7 @@
   
   <title>奥河 董馬（Toma Okugawa）</title>
   <meta name="description" content="奥河董馬（Toma Okugawa）の経歴と活動履歴です。弓削商船高等専門学校入学からLEADING EDGE 四国採択、Wakuwaku of the Future Lab設立までの歩みをご紹介します。">
-  <meta name="keywords" content="奥河董馬,Toma Okugawa,経歴,活動,弓削商船高専,LEADING EDGE 四国,Wakuwaku of the Future Lab,情報工学科">
-
+  
   <link rel="canonical" href="https://mirakurutomato.github.io/Toma_Okugawa/html/background.html">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,18 +22,22 @@
     }
 
     :root {
-      --primary-color: #6366f1;
-      --secondary-color: #06b6d4;
-      --accent-color: #f59e0b;
+      --primary-color: #3b82f6;
+      --primary-light: #60a5fa;
+      --primary-dark: #1d4ed8;
+      --secondary-color: #e0f2fe;
+      --accent-color: #0ea5e9;
       --success-color: #10b981;
       --text-primary: #1f2937;
-      --text-secondary: #6b7280;
+      --text-secondary: #64748b;
       --bg-primary: #ffffff;
       --bg-secondary: #f8fafc;
-      --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-      --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      --bg-tertiary: #f0f9ff;
+      --bg-gradient: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+      --bg-gradient-subtle: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      --shadow-soft: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
       --border-radius: 12px;
     }
 
@@ -53,21 +56,15 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+      background: linear-gradient(-45deg, #f0f9ff, #e0f2fe, #dbeafe, #bfdbfe);
       background-size: 400% 400%;
-      animation: gradientShift 20s ease infinite;
+      animation: gradientShift 25s ease infinite;
     }
 
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
-    }
-
-    .glass-effect {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .ly_header {
@@ -94,7 +91,7 @@
     .logo a {
       font-size: 1.5rem;
       font-weight: 700;
-      background: var(--bg-gradient);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-decoration: none;
@@ -128,7 +125,7 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: var(--bg-gradient);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       transition: left 0.3s ease;
       z-index: -1;
     }
@@ -139,11 +136,11 @@
 
     .nav_list a:hover {
       color: white;
-      transform: translateY(-2px);
+      transform: translateY(-1px);
     }
 
     .nav_list a[aria-current="page"] {
-      background: var(--bg-gradient);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       color: white;
     }
 
@@ -166,7 +163,7 @@
       font-size: 3.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      background: var(--bg-gradient);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -186,8 +183,8 @@
       left: 50%;
       top: 0;
       bottom: 0;
-      width: 4px;
-      background: var(--bg-gradient);
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary-light), var(--accent-color));
       transform: translateX(-50%);
       border-radius: 2px;
     }
@@ -220,11 +217,13 @@
       box-shadow: var(--shadow-medium);
       position: relative;
       transition: all 0.3s ease;
+      border: 1px solid rgba(59, 130, 246, 0.1);
     }
 
     .timeline-content:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-large);
+      border-color: var(--primary-light);
     }
 
     .timeline-content::before {
@@ -233,45 +232,45 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 4px;
-      background: var(--bg-gradient);
+      height: 3px;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
 
     .timeline-item:nth-child(odd) .timeline-content::after {
       content: '';
       position: absolute;
-      right: -15px;
+      right: -12px;
       top: 50%;
       transform: translateY(-50%);
       width: 0;
       height: 0;
-      border: 15px solid transparent;
+      border: 12px solid transparent;
       border-left-color: var(--bg-primary);
     }
 
     .timeline-item:nth-child(even) .timeline-content::after {
       content: '';
       position: absolute;
-      left: -15px;
+      left: -12px;
       top: 50%;
       transform: translateY(-50%);
       width: 0;
       height: 0;
-      border: 15px solid transparent;
+      border: 12px solid transparent;
       border-right-color: var(--bg-primary);
     }
 
     .timeline-date {
-      background: var(--bg-gradient);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
+      padding: 0.4rem 0.8rem;
+      border-radius: 16px;
       font-weight: 600;
       font-family: 'JetBrains Mono', monospace;
       display: inline-block;
       margin-bottom: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .timeline-title {
@@ -291,28 +290,30 @@
       left: 50%;
       top: 2rem;
       transform: translateX(-50%);
-      width: 60px;
-      height: 60px;
-      background: var(--bg-gradient);
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       box-shadow: var(--shadow-medium);
       z-index: 10;
+      border: 3px solid white;
     }
 
     .milestone-badge {
       display: inline-block;
-      background: linear-gradient(45deg, var(--success-color), #34d399);
-      color: white;
-      padding: 0.3rem 0.8rem;
-      border-radius: 15px;
-      font-size: 0.8rem;
+      background: var(--bg-gradient-subtle);
+      color: var(--primary-color);
+      padding: 0.25rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
       font-weight: 500;
       margin-top: 0.5rem;
+      border: 1px solid rgba(59, 130, 246, 0.2);
     }
 
     footer {
@@ -326,7 +327,7 @@
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
       }
       to {
         opacity: 1;
@@ -475,7 +476,7 @@
           setTimeout(() => {
             entry.target.style.opacity = '1';
             entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
-          }, index * 200);
+          }, index * 150);
         }
       });
     }, observerOptions);
