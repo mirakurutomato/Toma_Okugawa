@@ -25,154 +25,569 @@
   <meta property="og:image:width" content="400">
   <meta property="og:image:height" content="400">
   <meta property="og:image:alt" content="奥河董馬のプロフィール写真">
-  <meta property="profile:first_name" content="董馬">
-  <meta property="profile:last_name" content="奥河">
-  <meta property="profile:username" content="Toma Okugawa">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="奥河 董馬（Toma Okugawa） | Wakuwaku of the Future Lab 代表">
-  <meta name="twitter:description" content="弓削商船高等専門学校 情報工学科 2年生、Wakuwaku of the Future Lab 代表。PythonやMySQLを用いたデータ分析、画像処理、Webアプリ開発に取り組んでいます。">
-  <meta name="twitter:image" content="https://mirakurutomato.github.io/Toma_Okugawa/assets/Toma.jpg">
-  <meta name="twitter:image:alt" content="奥河董馬のプロフィール写真">
-  <meta name="twitter:creator" content="@toma_okugawa">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "奥河董馬",
-    "alternateName": "Toma Okugawa",
-    "description": "弓削商船高等専門学校 情報工学科 2年生、Wakuwaku of the Future Lab 代表",
-    "url": "https://mirakurutomato.github.io/Toma_Okugawa/html/home.html",
-    "image": "https://mirakurutomato.github.io/Toma_Okugawa/assets/Toma.jpg",
-    "jobTitle": "代表",
-    "affiliation": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "弓削商船高等専門学校",
-        "department": "情報工学科"
-      },
-      {
-        "@type": "Organization",
-        "name": "Wakuwaku of the Future Lab",
-        "foundingDate": "2025-09",
-        "founder": {
-          "@type": "Person",
-          "name": "奥河董馬"
-        }
-      }
-    ],
-    "knowsAbout": ["Python", "MySQL", "データ分析", "画像処理", "Webアプリ開発", "教育技術"],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "弓削商船高等専門学校"
-    },
-    "sameAs": [
-      "https://mirakurutomato.github.io/Toma_Okugawa/"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "奥河 董馬（Toma Okugawa）のプロフィール",
-    "description": "弓削商船高等専門学校 情報工学科 2年生、Wakuwaku of the Future Lab 代表のプロフィールページ",
-    "url": "https://mirakurutomato.github.io/Toma_Okugawa/html/home.html",
-    "inLanguage": ["ja", "en"],
-    "about": {
-      "@type": "Person",
-      "name": "奥河董馬",
-      "alternateName": "Toma Okugawa"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "奥河董馬"
-    },
-    "datePublished": "2025-09-03",
-    "dateModified": "2025-09-03"
-  }
-  </script>
-
   <link rel="canonical" href="https://mirakurutomato.github.io/Toma_Okugawa/html/home.html">
-  <link rel="alternate" hreflang="ja" href="https://mirakurutomato.github.io/Toma_Okugawa/html/home.html">
-  <link rel="alternate" hreflang="en" href="https://mirakurutomato.github.io/Toma_Okugawa/html/home.html">
-  <link rel="alternate" hreflang="x-default" href="https://mirakurutomato.github.io/Toma_Okugawa/html/home.html">
-  
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-  <link rel="manifest" href="/site.webmanifest">
-  
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosoher&display=swap" crossorigin>
-  <link rel="stylesheet" href="../css/style1.css">
-  
-  <link rel="preload" href="../assets/Toma.jpg" as="image">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="format-detection" content="telephone=no">
-  
-  <meta name="theme-color" content="#0077ff">
-  <meta name="msapplication-TileColor" content="#0077ff">
-  <meta name="msapplication-config" content="/browserconfig.xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-color: #6366f1;
+      --secondary-color: #06b6d4;
+      --accent-color: #f59e0b;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8fafc;
+      --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-large: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      --border-radius: 12px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+      overflow-x: hidden;
+    }
+
+    .animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .ly_header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .ly_header.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .ly_header_inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .logo a:hover {
+      transform: scale(1.05);
+    }
+
+    .nav_list {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav_list a {
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav_list a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--bg-gradient);
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
+
+    .nav_list a:hover::before {
+      left: 0;
+    }
+
+    .nav_list a:hover {
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    main {
+      padding-top: 100px;
+      min-height: 100vh;
+    }
+
+    .hero-section {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      animation: fadeInLeft 1s ease-out;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+
+    .hero-text .subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      animation: fadeInRight 1s ease-out;
+    }
+
+    .profile-card {
+      background: var(--bg-primary);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow-large);
+      transform: perspective(1000px) rotateY(-5deg);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .profile-card:hover {
+      transform: perspective(1000px) rotateY(0deg) translateY(-10px);
+      box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-card::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: var(--bg-gradient);
+      border-radius: 22px;
+      z-index: -1;
+    }
+
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: var(--shadow-medium);
+      transition: all 0.3s ease;
+    }
+
+    .profile-card:hover .profile-img {
+      transform: scale(1.05);
+    }
+
+    .about-section {
+      padding: 6rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-header h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .content-card {
+      background: var(--bg-primary);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .content-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--bg-gradient);
+    }
+
+    .content-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .content-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .content-card .icon {
+      width: 40px;
+      height: 40px;
+      background: var(--bg-gradient);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .skill-tag {
+      background: var(--bg-gradient);
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 25px;
+      text-align: center;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .skill-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .notice-section {
+      background: var(--bg-primary);
+      padding: 3rem 2rem;
+      margin: 4rem auto;
+      max-width: 800px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .notice-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border-left: 4px solid var(--primary-color);
+      background: var(--bg-secondary);
+      border-radius: 0 8px 8px 0;
+      transition: all 0.3s ease;
+    }
+
+    .notice-item:hover {
+      transform: translateX(5px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .notice-date {
+      background: var(--bg-gradient);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 500;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    footer {
+      background: var(--text-primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav_list {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .ly_header_inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .profile-img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .ly_header_inner {
+        padding: 0 1rem;
+      }
+
+      .about-section {
+        padding: 4rem 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="ly_header" role="banner">
+  <div class="animated-bg"></div>
+  
+  <header class="ly_header glass-effect" role="banner" id="header">
     <div class="ly_header_inner">
-      <span class="logo"><a href="home.html" aria-label="ホームページに戻る">奥河 董馬（Toma Okugawa）</a></span>
+      <span class="logo"><a href="home.html" aria-label="ホームページに戻る">奥河 董馬</a></span>
       <nav class="nav" role="navigation" aria-label="メインナビゲーション">
         <ul class="nav_list">
-          <li><a href="home.html" aria-current="page">ホーム</a></li>
-          <li><a href="background.html">経歴・活動</a></li>
-          <li><a href="award.html">受賞</a></li>
+          <li><a href="home.html" aria-current="page"><i class="fas fa-home"></i> ホーム</a></li>
+          <li><a href="background.html"><i class="fas fa-user-graduate"></i> 経歴・活動</a></li>
+          <li><a href="award.html"><i class="fas fa-trophy"></i> 受賞</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main role="main">
-    <article>
-      <section class="ly_cont">
-        <h1>自己紹介（About）</h1>
-        <div class="profile-flex">
-          <img src="../assets/Toma.jpg" alt="奥河董馬のプロフィール写真" class="profile-img" width="300" height="300" loading="eager">
-          <div class="profile-text">
-            <div lang="ja">
-              <h2>日本語</h2>
-              <p>奥河董馬です。<br>
-                現在、弓削商船高等専門学校 情報工学科 2年生です。<br>
-                2025年9月にWakuwaku of the Future Labを起業し、現在代表を務めております。</p>
-            </div>
-
-            <div lang="en">
-              <h2>English</h2>
-              <p>Toma Okukawa.<br>
-                I am currently a 2nd-year student in the Department of Information Engineering at Yuge National College of Maritime Technology.<br>
-                In September 2025, I founded Wakuwaku of the Future Lab, where I currently serve as the founder and owner.</p>
-            </div>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Toma Okugawa</h1>
+          <p class="subtitle">未来の学びを創造するエンジニア</p>
+          <p>弓削商船高等専門学校 情報工学科で学び、<br>Wakuwaku of the Future Labを設立。<br>教育とテクノロジーの融合を目指しています。</p>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <img src="../assets/Toma.jpg" alt="奥河董馬のプロフィール写真" class="profile-img" width="300" height="300" loading="eager">
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="ly_cont">
-        <h2>お知らせ（Notice）</h2>
-        <ul>
-          <li><time datetime="2025-09-03">2025/09/03</time>：ホームページを開設しました！</li>
-        </ul>
-      </section>
-    </article>
+    <section class="about-section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>自己紹介</p>
+      </div>
+
+      <div class="content-grid">
+        <div class="content-card fade-in-up">
+          <h3><span class="icon"><i class="fas fa-flag-usa"></i></span> English</h3>
+          <p>I am Toma Okugawa, currently a 2nd-year student in the Department of Information Engineering at Yuge National College of Maritime Technology. In September 2025, I founded Wakuwaku of the Future Lab, where I currently serve as the founder and CEO.</p>
+        </div>
+
+        <div class="content-card fade-in-up">
+          <h3><span class="icon"><i class="fas fa-flag"></i></span> 日本語</h3>
+          <p>奥河董馬です。現在、弓削商船高等専門学校 情報工学科 2年生です。2025年9月にWakuwaku of the Future Labを起業し、現在代表を務めております。</p>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3><span class="icon"><i class="fas fa-code"></i></span> Technical Skills</h3>
+        <p>PythonやMySQLを用いたデータ分析をはじめとし、画像処理やWebアプリ開発にも取り組んでいます。</p>
+        <div class="skills-grid">
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">MySQL</div>
+          <div class="skill-tag">データ分析</div>
+          <div class="skill-tag">画像処理</div>
+          <div class="skill-tag">Webアプリ開発</div>
+          <div class="skill-tag">機械学習</div>
+        </div>
+      </div>
+
+      <div class="notice-section">
+        <div class="section-header">
+          <h2>Notice</h2>
+          <p>お知らせ</p>
+        </div>
+        <div class="notice-item">
+          <div class="notice-date">2025/09/03</div>
+          <div>ホームページを開設しました！</div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer role="contentinfo" style="text-align: center; padding: 2rem; font-size: 0.9rem; color: #555;">
+  <footer role="contentinfo">
     <p>&copy; 2025 奥河董馬（Toma Okugawa）. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in-up').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
