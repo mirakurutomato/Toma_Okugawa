@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>奥河 董馬（Toma Okugawa）</title>
+  <meta name="description" content="奥河 董馬（Toma Okugawa）">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --surface:#ffffff;
+      --muted:#6b7280;
+      --accent:#0ea5a4;
+      --card:#f8fafc;
+      --border:#e6eef6;
+      --maxw:900px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      background:var(--bg);
+      color:#0b1220;
+      line-height:1.6;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:48px 20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+    }
+
+    /* Header (centered) */
+    .header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(180deg,var(--surface),var(--card));
+      border:1px solid var(--border);
+      padding:22px;
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(12,20,30,0.04);
+      margin-bottom:20px;
+    }
+
+    .hd-text{display:flex;flex-direction:column;align-items:center}
+    h1{margin:0;font-size:1.4rem;color:#071428}
+    .lead{margin-top:6px;color:var(--muted);font-size:0.96rem;text-align:center;max-width:560px}
+
+    /* Cards / sections */
+    .stack{display:flex;flex-direction:column;gap:16px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      padding:18px;
+      border-radius:10px;
+      color:#0b1220;
+    }
+    .card h2{margin:0 0 8px 0;font-size:1.05rem}
+    .card h3{margin:6px 0 8px 0;font-size:0.98rem;color:var(--accent)}
+    .card p, .card li{color:var(--muted);font-size:0.95rem}
+    ul{margin:8px 0 0 18px;padding:0}
+    li{margin-bottom:8px}
+
+    footer{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:0.9rem;
+      text-align:center;
+    }
+
+    @media (max-width:560px){
+      body{padding:28px 12px}
+      .header{padding:16px}
+      h1{font-size:1.15rem}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header class="header" aria-label="プロフィール">
+      <div class="hd-text">
+        <h1>奥河 董馬（Toma Okugawa）</h1>
+        <p class="lead">弓削商船高等専門学校 情報工学科 2年生。<br>2025年にWakuwaku of the Future Labを起業し、代表を務めています。</p>
+      </div>
+    </header>
+
+    <div class="stack">
+      <section class="card" id="research">
+        <h2>Research</h2>
+        <h3>口頭発表</h3>
+        <ul>
+          <li>2025/09：奥河 董馬、益崎 智成、牧山 隆洋，「リアルタイム姿勢推定による弓道フォーム評価手法の提案とWeb実装」，令和7年度 電気・電子・情報関係学会四国支部連合大会．</li>
+        </ul>
+      </section>
+
+      <section class="card" id="background">
+        <h2>Background</h2>
+        <ul>
+          <li>2025/09-現在：Wakuwaku of the Future Lab 代表</li>
+          <li>2025/10：全国高等専門学校プログラミングコンテスト 第36回松江大会 出場・デモンストレーション担当</li>
+          <li>2025/09：セキュリティ・キャンプ2025ミニ（香川開催）専門講座 参加</li>
+          <li>2025/08：LEADING EDGE 四国 採択</li>
+          <li>2024/04：弓削商船高等専門学校 情報工学科 入学</li>
+        </ul>
+      </section>
+
+      <section class="card" id="award">
+        <h2>Award</h2>
+        <ul>
+          <li>2025/10：全国高等専門学校プログラミングコンテスト 第36回松江大会 敢闘賞</li>
+          <li>2025/04：弓削商船高等専門学校 第12回情報工学科学生表彰 優秀学生賞</li>
+        </ul>
+      </section>
+
+      <footer>
+        &copy; 2025 奥河 董馬（Toma Okugawa）. All Rights Reserved.
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
