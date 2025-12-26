@@ -1,4 +1,3 @@
-
 (function () {
     const navLinks = document.querySelectorAll('.page-nav a[href^="#"]');
 
